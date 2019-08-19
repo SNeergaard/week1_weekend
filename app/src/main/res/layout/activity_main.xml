@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnPicture"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Picture"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:onClick="takePicture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/btnEMI"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="EMI calculator"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:onClick="launchEMI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPicture"/>
+    <Button
+        android:id="@+id/btnAddPerson"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Add Person"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEMI"/>
+    <Button
+        android:id="@+id/btnPersonView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="View PErsons"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPerson"/>
+    <Button
+        android:id="@+id/btnOther1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Browser"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:onClick="launchBrowser"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPersonView"/>
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Binary Converter"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:onClick="launchBinary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOther1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
